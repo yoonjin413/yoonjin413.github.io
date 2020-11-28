@@ -4,3 +4,677 @@
 *{font-family: "Noto Sans KR", sans-serif !important;outline: none;}
 
 .inner{margin: auto 0;width: 994px;text-align: center;}
+
+
+
+
+/* @charset "utf-8"; */
+
+/*
+base.css 다음으로 홈페이지에서 공통적으로 적용되는 css
+*/
+
+
+/* div box */ /* 20120929 */
+.d_box_50 {width:100%}
+.d_box_50 .box_1, .d_box_50 .box_2 {float:left}
+.d_box_50 .box_1 {width:53%}
+.d_box_50 .box_2 {width:40%}
+
+.d_box_60 {width:100%}
+.d_box_60 .box_1, .d_box_60 .box_2 {float:left}
+.d_box_60 .box_1 {width:58%}
+.d_box_60 .box_2 {width:35%}
+
+/* common */ /* 20120929 */
+.b_none {border:none}
+.p_box_n {margin-bottom: 20px;padding: 0 15px;line-height:18px}
+.bg_none {background:none; list-style:none}
+.green {color:#438f1e}
+.t_a_c {text-align:center}
+.t_a_l {text-align:left}
+.t_a_r{text-align:right}/* 140210 */
+.box{border:1px solid #dcdcdc;padding:30px 0}/* 131028 */
+.input_right{margin:-16px 0 20px 0;font-weight:bold}/* 140210 */
+.input_right input,.input_right label{margin:0;padding:0;vertical-align:middle}/* 140210 */
+
+/* margin and height */ /* 20120926 */
+.ma_5 {margin-bottom:5px}
+.ma_10 {margin-bottom:10px}
+.ma_15 {margin-bottom:15px}
+.ma_20 {margin-bottom:20px}
+.ma_30 {margin-bottom:30px}
+.ma_40 {margin-bottom:40px}
+.ma_50 {margin-bottom:50px}
+.ma_60 {margin-bottom:60px}
+.ma_70 {margin-bottom:70px}
+.ma_80 {margin-bottom:80px}
+.ma_90 {margin-bottom:90px}
+.ma_100 {margin-bottom:100px}
+.ma_110 {margin-bottom:110px}
+.ma_120 {margin-bottom:120px}
+.ma_130 {margin-bottom:130px}
+.ma_140 {margin-bottom:140px}
+.h_80 {height:80px}
+
+/* clear and float */
+.clear {clear:both}
+.f_l {float:left}
+.f_r {float:right}
+
+/* common */
+.ir_blind{position: absolute; left: -9999px;font-size:1px;width:0;height:0;overflow: hidden;}
+.hidden,#content .hidden{visibility:hidden;position:absolute;left:-9999em;width:1px;height:1px;margin:0;padding:0;background:none;font-size:0;line-height:0;text-indent:-9999em}
+.right{float:right}
+.right_mark{float:right;margin-top: -23px;}  /*  20160512 cjs */
+.left{float:left}
+.over{background-color:#f7f7f7}
+legend,hr{visibility:hidden;width:0;height:0;font-size:0;line-height:0}
+caption{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;}
+
+/* Typography */
+body,input,textarea,select,button,table{font-family:"NanumGothic","나눔고딕","Malgun Gothic","맑은 고딕",Dotum,"돋움";}
+body{font-size:62.5%/* px를 em으로 표현하기 위한 설정 :: 예) 14px = 1.4em */}
+
+/* layout */
+body{margin:0;padding:0;color:#656565}
+#skipNavi{position:relative}
+#skipNavi a{display:block;overflow:hidden;width:1px;height:1px;margin-bottom:-1px;background:#22b24c url(../images/common/bg_skipnavi.gif) left bottom repeat-x;font-size:12px;font-weight:bold;color:#FFF;text-align:center;white-space:nowrap}
+#skipNavi a:focus,#skipNavi a:active{width:100%;height:auto;padding:8px}
+#wrap{position:relative;width:100%;padding:0;}
+
+/*top_banner*/
+/* 2019-01-28 수정 시작 */
+/* #top_banner_wrap{width:100%;height:130px;background-color:#f4f4f4;} */
+#top_banner_wrap{width:100%;height:130px;background:url(https://www.koroad.or.kr/images/images2019/portal/common2018/top_banner_background.gif) repeat center center;}
+div.top_banner{position:relative;width:994px;margin: 0 auto;}
+p.top_bn_img{margin-left:-40px; z-index:100;}
+div.top_banner a{position:absolute; right:0;top:0;}
+span.top_ban_x {display:inline-block; width:36px; height:36px; background:url(https://www.koroad.or.kr/images/common/ico_close.png) no-repeat center center rgba(204, 204, 204, 1); cursor:pointer;}
+span.top_ban_7d{position:absolute; right:-95px;top:48px;display:inline-block; height:48px; line-height:48px;color:#333;font-size:13px;}
+span.top_ban_7d input[type=checkbox]{width:18px;height:18px;vertical-align: middle;}
+span.top_ban_7d label{display:inline-block;padding-left:3px;}
+/* 2019-01-28 수정 끝 */
+
+
+/* header */
+/* #header{position:relative;z-index:10;width:100%;min-width:1100px;margin:0 auto;padding:0;text-align:center;background-color:#FFF;border-bottom:.5px solid #ccc;}  20190415 cjs */
+#header{position:relative;width:100%;min-width:1100px;margin:0 auto;padding:0;text-align:center;background-color:#FFF;border-bottom:.5px solid #ccc;} 
+#header h1{float:left;position:absolute;top:37px;left:50%;margin-left:-540px;z-index:100;width:131px;height:31px}
+#header h1 a{display:inline-block;}
+
+/* CSS sprite Top Menu */
+#toplink{clear:both;width:100%;height:25px;margin-bottom:32px}
+#toplink h2, #toplink .toplink_home{display:inline;float:left;width:101px;height:26px}
+#toplink ul{float:right}
+#toplink li{float:left;padding-left:4px;padding-right:5px;background:url(../images/common/bar_toplink.gif) 0 50% no-repeat}
+#toplink li.toplink_first{padding-left:0;background:none}
+.toplink1,.toplink2,.toplink3,.toplink4,.toplink5,.toplink6,.toplink7,.toplink8,.toplink9,.toplink10,.toplink11,.toplink12,.toplink13{display:block;overflow:hidden;position:relative;width:51px;height:25px;margin:0} /* 1402 */
+.toplink1 span,.toplink2 span,.toplink3 span,.toplink4 span,.toplink5 span,.toplink6 span,.toplink7 span,.toplink8 span,.toplink9 span,.toplink10 span,.toplink11 span,.toplink12 span,.toplink13 span{display:block;position:absolute;top:0;left:0;width:51px;height:25px;background:url(../images/common/txt_toplink1.gif) 0 0 no-repeat;text-indent:-9999em;cursor:pointer} /* 1402 */
+.toplink1{width:35px}
+.toplink1 span{width:35px;background-position:0 0}
+.toplink2{width:44px}
+.toplink2 span{width:44px;background-position:-42px 0}
+.toplink3{width:81px}
+
+/* 운전면허시험장 */
+.toplink3 span{width:81px;background-position:-93px 0}
+.toplink4{width:35px}
+.toplink4 span{width:35px;background-position:-181px 0}
+.toplink5{width:51px}
+
+/* 시도지부 */
+.toplink5 span{width:51px;background-position:-219px 0}
+.toplink6{width:93px}
+.toplink6 span{width:93px;background-position:-277px 0}
+.toplink7{width:120px}
+.toplink7 span{width:120px;background-position:-377px 0}
+.toplink8{width:54px}
+.toplink8 span{width:54px;background-position:-504px 0}
+.toplink9{width:74px}
+.toplink9 span{width:74px;background-position:-565px 0}
+.toplink10{width:40px}
+.toplink10 span{width:40px;background-position:-644px 0}
+
+/* 로그아웃 */
+.toplink11{width:44px}
+.toplink11 span{width:44px;background-position:-716px 0}
+
+/* 회원정보수정 */
+.toplink12{width:64px}
+.toplink12 span{width:64px;background-position:-760px 0}
+
+/* Sitemap 1402 */
+.toplink13{width:44px}
+.toplink13 span{width:44px;background-position:-790px 0}
+
+.active a.toplink1 span,a.toplink1:hover span{background-position:0 -25px}
+.active a.toplink2 span,a.toplink2:hover span{background-position:-42px -25px}
+.active a.toplink3 span,a.toplink3:hover span{background-position:-93px -25px}
+#toplink li.active a.toplink4 span,a.toplink4:hover span{background-position:-181px -25px}
+#toplink li.active a.toplink5 span,a.toplink5:hover span{background-position:-219px -25px}
+#toplink li.active a.toplink6 span,a.toplink6:hover span{background-position:-277px -25px}
+#toplink li.active a.toplink7 span,a.toplink7:hover span{background-position:-377px -25px}
+#toplink li.active a.toplink8 span,a.toplink8:hover span{background-position:-504px -25px}
+#toplink li.active a.toplink9 span,a.toplink9:hover span{background-position:-565px -25px}
+#toplink li.active a.toplink10 span,a.toplink10:hover span{background-position:-644px -25px}
+.active a.toplink11 span,a.toplink11:hover span{background-position:-716px -25px}
+.active a.toplink12 span,a.toplink12:hover span{background-position:-760px -25px}
+.active a.toplink13 span,a.toplink13:hover span{background-position:-790px -25px} /* 1402 */
+
+/* TopLink 팝업메뉴 설정 */
+#popDrvMenu,#popBranchMenu,#popForeignMenu,#popTbn{display:none;overflow:hidden;position:absolute;top:23px;left:0;z-index:200;height:90px;margin:0;padding:6px;border:2px solid #22b24c;background:#FFF;color:#757575}
+#popDrvMenu{width:350px;margin-left:200px}
+#popBranchMenu{width:248px;height:67px;margin-left:410px}
+#popForeignMenu{width:280px;height:23px;margin-left:700px}
+#popTbn{width:305px;height:90px;margin-left:340px} /* 1402 */
+#popDrvMenu ul,#popBranchMenu ul,#popForeignMenu ul,#popTbn ul{display:inline;float:left} 
+#popDrvMenu ul li,#popBranchMenu ul li,#popForeignMenu ul li,#popTbn ul li{display:inline;float:left;height:18px;margin:2px;padding:0;background:none}
+#popDrvMenu ul li a,#popBranchMenu ul li a,#popForeignMenu ul li a,#popTbn ul li a{display:block;float:left;height:18px;background:url(../images/common/bg_pop_top.gif) 0 0 no-repeat;font-size:12px;line-height:15px;color:#757575; cursor:pointer; text-decoration:none}
+#popDrvMenu ul li a:hover, #popBranchMenu ul li a:hover, #popForeignMenu ul li a:hover,#popTbn ul li a:hover,
+#popDrvMenu ul li a:focus, #popBranchMenu ul li a:focus, #popForeignMenu ul li a:focus,#popTbn ul li a:focus{background:url(../images/common/bg_pop_top.gif) 0 -22px no-repeat;color:#FFF}
+#popDrvMenu ul li a span,#popBranchMenu ul li a span,#popForeignMenu ul li a span,#popTbn  ul li a span{display:block;float:left;height:18px;padding:2px 13px 0 7px;background:url(../images/common/bg_pop_top_r.gif) right 0 no-repeat}
+#popDrvMenu ul li a:hover span,#popBranchMenu ul li a:hover span,#popForeignMenu ul li a:hover span,#popTbn ul li a:hover span,
+#popDrvMenu ul li a:focus span,#popBranchMenu ul li a:focus span,#popForeignMenu ul li a:focus span,#popTbn ul li a:focus span{background:url(../images/common/bg_pop_top_r.gif) right -22px no-repeat}
+
+/* GNB */
+/*
+#gnb{display:inline-block;clear:both;width:605px;height:auto;margin-top:0;margin-left:190px}
+#gnb li{display:inline;float:left;width:69px;margin-right:20px}
+*/
+/* leekhak */
+#gnb{display:inline-block;width:570px;height:68px;margin-top:37px;}
+#gnb li{display:inline;float:left;width:90px;margin-right:30px}
+#gnb li:nth-of-type(5){margin-right:0;}
+#gnb li strong{display:block;/* overflow:hidden; */position:relative;width:90px;height:46px;margin:0;padding:0}
+#gnb li strong.active:after{content:'';display: block;width:67px;height:6px;position: absolute;left:10px;bottom:-22px;background:url(https://www.koroad.or.kr/images/images2019/portal/common2018/gnb_sub_btmbar.gif) 0 0 no-repeat;}
+#gnb li strong a{display:block;position:absolute;top:0;left:0;width:90px;height:68px;text-indent:-9999em;cursor:pointer;font-size:20px;}
+#gnb li#menu6{margin:0} /* 1402 */
+#gnb li#sitemap{margin:0}
+#gnb li#sitemap strong,#gnb li#sitemap strong a{width:65px}
+#gnb li strong a{background:url(https://www.koroad.or.kr/images/images2019/portal/gnb.gif) 0 0 no-repeat}
+#gnb li#menu1 strong a{background-position:0 0}
+#gnb li#menu2 strong a{background-position:-140px 0}
+#gnb li#menu3 strong a{background-position:-284px 0}
+#gnb li#menu4 strong a{background-position:-420px 0}
+#gnb li#menu5 strong a{background-position:-564px 0}
+/* #gnb li#menu6 strong a{background-position:-447px 0}
+#gnb li#menu7 strong a{background-position:-536px 0} 
+#gnb li#sitemap strong a{background-position:-536px 0} */
+#gnb li#menu1 strong.active a,#gnb li#menu1 strong a:hover{background-position:0 -70px}
+#gnb li#menu2 strong.active a,#gnb li#menu2 strong a:hover{background-position:-140px -70px}
+#gnb li#menu3 strong.active a,#gnb li#menu3 strong a:hover{background-position:-284px -70px}
+#gnb li#menu4 strong.active a,#gnb li#menu4 strong a:hover{background-position:-420px -70px}
+#gnb li#menu5 strong.active a,#gnb li#menu5 strong a:hover{background-position:-564px -70px}
+/* #gnb li#menu6 strong.active a,#gnb li#menu6 strong a:hover{background-position:-447px -70px}
+#gnb li#menu7 strong.active a,#gnb li#menu7 strong a:hover{background-position:-536px -70px}
+#gnb li#sitemap strong.active a,#gnb li#sitemap strong a:hover{background-position:-536px -70px} */                            
+#gnb .gnb_sub{overflow:hidden;position:absolute;top:105px;left:50%;z-index:100;width:980px;max-height:480px;margin:1px;margin-left:-490px;}
+#gnb li div.gnb_sub div{position:absolute;width:978px;height:auto;background-color:#fff;border:1px solid #ccc;border-top:none;margin-top: -1px;}
+#gnb #menu1 div.gnb_sub div{height:270px;}
+#gnb #menu2 div.gnb_sub div{height:190px}
+#gnb #menu3 div.gnb_sub div{height:370px}
+#gnb #menu4 div.gnb_sub div{height:470px}
+#gnb #menu5 div.gnb_sub div{height:400px}
+/* #gnb #menu5 div.gnb_sub div{height:479px}
+#gnb #menu6 div.gnb_sub div{height:479px}  171211 cjs
+#gnb #menu2 div.gnb_sub div{height:479px}  180903 cjs */
+
+
+/* 사업마당 */
+#gnb #sitemap div.gnb_sub div{height:1170px}
+
+/* 전체메뉴 */
+#gnb div.gnb_sub div .gnb_sub_ttl{display:block;float:left;width:186px;height:100%;background:#FFF url(https://www.koroad.or.kr/images/images2019/portal/common2018/h3_gnb_t_menu1.jpg) 0 0 no-repeat;}
+#gnb div.gnb_sub div .gnb_sub_ttl h3{font-size:30px;color:#318ce1;font-weight:bold;margin-top:35px;}
+#gnb div.gnb_sub div .gnb_sub_ttl p{margin-top:22px;padding:0 30px;font-size:13px;color:#888;text-align:left;}
+#gnb .gnb_sub_sitemap{display:block;float:right;width:731px;height:419px;text-align:center;padding:20px 30px 13px;}
+#gnb .gnb_sub_sitemap .gnb_sub_colmn{display:inline-block;overflow:hidden;float:left;width:182px;margin:0;text-align:left}
+#gnb .gnb_sub_colmn h4{overflow:hidden; clear:both;left:0;height:22px;margin:8px 0;padding:9px 5px 2px 13px;font-size:14px;font-weight:bold;color:#555;letter-spacing:-1px}
+#gnb .gnb_sub_colmn h4.top{height:21px;margin:0 0 8px;}
+#gnb .gnb_sub_colmn h4.top a{width:100%;}
+#gnb .gnb_sub_colmn h4.narrow{letter-spacing:-1px}
+#gnb .gnb_sub_colmn h4.narrow2{letter-spacing:-2px}
+#gnb .gnb_sub_colmn h4.narrow3{letter-spacing:-1px}
+#gnb .gnb_sub_colmn h4 a{font-weight:bold;color:#555;display:inline-block;}
+#gnb .gnb_sub_colmn ul{overflow:hidden;clear:both;height:auto;margin:0;padding-left:14px;padding-right:10px}
+#gnb .gnb_sub_colmn ul li{clear:both;width:162px;font-size:13px;margin-bottom:13px;line-height:13px;padding-right:20px;}
+#gnb .gnb_sub_colmn ul li a{font-weight:normal;font-size:12px;color:#656565;letter-spacing:-1px;display:block;}
+#gnb .gnb_sub_colmn ul li a:hover{color:#318ce1;}
+#gnb .gnb_sub_colmn ul li a:active{font-weight:bold;color:#318ce1;}
+#gnb .gnb_sub_colmn ul.gnb_sub_quick{float:left;width:162px;height:100%;margin:0 0 0 1px;padding:0;border-top:1px solid #e6e6e6;}
+#gnb .gnb_sub_colmn ul.gnb_sub_quick li{display:block;clear:both;width:162px;height:90px;margin:0;padding:0}
+#gnb .gnb_sub_colmn .gnb_sub_quick li.last{height:89px}
+
+/* leekhak */
+#gnb .gnb_sub_colmn ul.gnb_sub_quick li a{float:left;width:162px;height:90px;display:block;}
+
+/* -----------------  Sitemap 용 정의 -------------- */
+.sitemap{display:block;clear:both;width:100%;height:auto;border-top:1px solid #22B04B}
+.sitemap:after{display:block;clear:both;content:' '}
+.sitemap .gnb_sub{overflow:hidden;width:816px;height:auto}
+.sitemap div.gnb_sub div{height:277px;background:url(https://www.koroad.or.kr/images/images2019/portal/bg_gnb_sub.png) center bottom no-repeat}
+.sitemap div.gnb_sub div{height:1170px}
+
+/* 전체메뉴 */
+.sitemap div.gnb_sub div h3{float:left;width:162px;height:269px;margin:0 0 0 1px;padding:0;background:none}
+.sitemap .gnb_sub_sitemap{float:left;height:auto}
+.sitemap .gnb_sub_colmn{display:inline-block;overflow:hidden;float:left;width:163px;margin:0;padding:0;text-align:left}
+.sitemap .gnb_sub_colmn h4{overflow:hidden;clear:both;left:0;width:123px;height:22px;margin:8px 0;padding:9px 25px 2px 15px;background:url(https://www.koroad.or.kr/images/images2019/portal/bg_gnb_sub_h4.gif) right bottom no-repeat;background-position:1px 0;font-size:12px;font-weight:bold;color:#555;letter-spacing:-1px}
+.sitemap .gnb_sub_colmn h4.top{height:21px;margin:0 0 8px}
+.sitemap .gnb_sub_colmn h4.narrow{letter-spacing:-1px}
+.sitemap .gnb_sub_colmn h4.narrow2{letter-spacing:-2px}
+.sitemap .gnb_sub_colmn h4.narrow2{letter-spacing:-3px}
+.sitemap .gnb_sub_colmn h4 a{font-weight:bold;color:#555}
+.sitemap .gnb_sub_colmn ul{overflow:hidden;clear:both;height:auto;margin:0;padding-left:14px;padding-right:10px}
+.sitemap .gnb_sub_colmn ul li{clear:both;width:135px;margin:0 0 4px;padding:0 0 0 6px;background:url(https://www.koroad.or.kr/images/images2019/portal/icon_sub_gnb.gif) 0 6px no-repeat;line-height:15px}
+.sitemap .gnb_sub_colmn ul li a{font-weight:normal;font-size:12px;color:#656565;letter-spacing:-1px}
+.sitemap .gnb_sub_colmn ul li a:hover{font-weight:bold;color:#009a2c}
+.sitemap .gnb_sub_colmn ul.gnb_sub_quick{float:left;width:162px;height:100%;margin:0 0 0 1px;padding:0}
+.sitemap .gnb_sub_colmn ul.gnb_sub_quick li{display:block;clear:both;width:162px;height:90px;margin:0;padding:0}
+.sitemap .gnb_sub_colmn .gnb_sub_quick li.last{height:89px}
+
+.sitemap .gnb_sub_colmn{display:inline-block;overflow:hidden;float:left;width:163px}
+.sitemap .gnb_sub_sitemap{width:100%}
+.sitemap div.gnb_sub div h3{clear:both;height:35px}
+
+/* total search */
+.total_search{position:absolute;top:37px;right:50%;margin-right:-560px;width:185px;height:36px;border-bottom: 2px solid #318ce1;}
+.total_search_default{}
+.total_search .i_label{top:5px;left:9px}
+.total_search .i_text{display:inline-block;float:left;position:relative;width:140px;margin:0;padding:4px 0 10px 8px;border:none;background:transparent;vertical-align:middle}
+.total_search .hide{visibility:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+.total_search label{font-size:12px;color:#757575}
+.total_search input#totalSrchSubmit{float:right;margin:0;padding:0}
+.total_rec{float:right;margin-bottom:3px}
+
+/* 0517  moon edit */
+
+/* hx 헤더 & ul li 정의 */
+#content h3{clear:both;margin-bottom:12px;padding-left:14px;background:url(../images/common/icon_cnt_h3.gif) 0 50% no-repeat;font-size:1.2em;font-weight:bold;color:#5f6266}
+#content h4{margin-left:6px;margin-bottom:12px;padding-left:11px;background:url(../images/common/icon_cnt_h4.gif) 0 .2em no-repeat;font-size:1em;font-weight:bold;line-height:1.3em;color:#3d71b5}
+
+#content ul.list1{clear:both;margin-left:13px;margin-bottom:20px}
+#content ul.list1 li{margin-bottom:1em;padding-left:7px;background:url(../images/common/icon_li1.gif) 0 .5em no-repeat;line-height:1.4em}
+#content ul.list1 li img{display:block;clear:left;margin-top:.3em}
+#content ul.list1 li em{color:#4672ae}
+#content ul.list1 strong{font-weight:bold;color:#333}
+#content ul.list1 strong.br{display:block}
+
+#content ul.list1 ul{margin-left:13px;margin-bottom:10px;margin-top:8px}
+
+/* 0509  moon edit */
+#content ul.list1 ul li{margin-bottom:.8em;padding-left:7px;background:url(../images/common/icon_li_li.gif) 0 .5em no-repeat;line-height:1.4em;color:#757575}
+
+/* 0509  moon edit */
+#content ul.list1 ul li ul{margin-left:13px;margin-bottom:10px;margin-top:8px}
+
+/* 0509  moon edit */
+#content ul.list1 ul li ul li{margin-bottom:.7em;padding-left:7px;background:url(../images/common/icon_li_li_li.gif) 0 .5em no-repeat;line-height:1.4em;color:#757575}
+
+/* 0509  moon edit */
+#content ul.list2,#content ol.list2{clear:both;height:auto;margin-left:13px;margin-bottom:30px}
+#content ul.list2 li,#content ol.list2 li{margin-bottom:.5em;padding-left:7px;background:url(../images/common/icon_li1.gif) 0 .5em no-repeat;line-height:1.4em}
+#content ul.list2 li img,#content ol.list2 li img{display:block;clear:left;margin-top:.3em}
+#content ul.list2 li span img,#content ol.list2 li span img{display:inline-block;margin:0;padding:0 0 5px;vertical-align:middle}
+#content ul.list2 img,#content ol.list2 img{padding-bottom:.4em}
+#content ul.list2 li em,#content ol.list2 li em{color:#4672ae}
+#content ul.list2 strong,#content ol.list2 strong{font-weight:bold;color:#333}
+#content ul.list2 li.bg_none {background:none} /* 20120929 */
+
+/* 순서대로 순번 부여 */
+#content ol.list2{padding-left:18px}
+#content ol.list2 li{display:list-item;padding-left:0;background:none}
+
+/* 0510  moon edit */
+#content ul.list2 strong.br,#content ol.list2 strong.br{display:block}
+#content ul.list2 ul,#content ol.list2 ul{margin-left:13px;margin-bottom:5px;margin-top:5px}
+
+/* 0509  moon edit */
+#content ul.list2 ul li,#content ol.list2 ul li{margin-bottom:.5em;padding-left:7px;background:url(../images/common/icon_li_li.gif) 0 .5em no-repeat;line-height:1.4em;color:#757575}
+
+/* 0509  moon edit */
+#content ul.list2 ul li ul{margin-left:13px;margin-bottom:5px;margin-top:5px}
+
+/* 0509  moon edit */
+#content ul.list2 ul li ul li{margin-bottom:.5em;padding-left:7px;background:url(../images/common/icon_li_li_li.gif) 0 .5em no-repeat;line-height:1.4em;color:#757575}
+
+/* 1 부터 5까지 순서대로 표시되는 OL */
+ol.ol2 li{display:list-item;margin-bottom:.5em;padding-left:20px;background:url(../images/common/icon_ol2.gif) 0 0 no-repeat;line-height:1.4em;list-style:none}
+ol.ol2 li.num1{background-position:0 0}
+ol.ol2 li.num2{background-position:0 -100px}
+ol.ol2 li.num3{background-position:0 -200px}
+ol.ol2 li.num4{background-position:0 -300px}
+ol.ol2 li.num5{background-position:0 -400px}
+ol.ol2 li.num6{background-position:0 -500px}
+
+/* 0509  moon edit */
+#content ul li table.datatable{margin-top:.4em;margin-bottom:.4em}
+
+/* 테이블 내 ul li 정의 */
+#content table.datatable ul.list2{clear:both;margin-left:1px;margin:.3em 0}
+#content table.datatable ul.list2 li{margin-bottom:.2em;padding-left:7px;background:url(../images/common/icon_li1.gif) 0 .5em no-repeat;line-height:1.3em}
+#content table.datatable ul.list2 li img{display:block;clear:left;margin-top:.3em}
+#content table.datatable ul.list2 img{padding-bottom:10px}
+#content table.datatable ul.list2 li em{color:#4672ae}
+#content table.datatable ul.list2 strong{font-weight:bold;color:#333}
+
+/* 0510  moon edit */
+#content table.datatable ul.list2 strong.br{display:block}
+#content table.datatable ul.list2 ul{margin-left:13px;margin:.3em 0}
+
+/* 0509  moon edit */
+#content table.datatable ul.list2 ul li{margin-bottom:.2em;padding-left:7px;background:url(../images/common/icon_li_li.gif) 0 .5em no-repeat;line-height:1.4em;color:#757575}
+
+/* 0509  moon edit */
+#content table.datatable ul.list2 ul li ul{margin-left:13px;margin:.3em 0}
+
+/* 0509  moon edit */
+#content table.datatable ul.list2 ul li ul li{margin-bottom:.2em;padding-left:7px;background:url(../images/common/icon_li_li_li.gif) 0 .5em no-repeat;line-height:1.4em;color:#757575}
+
+/* 0509  moon edit */
+#content p.list2{margin-left:15px;margin-bottom:1em;line-height:1.4em}
+#content div.list2{margin-left:15px;margin-bottom:1em;line-height:1.4em}
+
+/* 0510  moon edit */
+#content ul.list3{clear:both;height:auto;margin-left:13px;margin-bottom:30px}
+#content ul.list3 li{margin-bottom:.5em;padding-left:7px;line-height:1.4em}
+#content ul.list3 li img{display:block;clear:left;margin-top:.3em}
+
+/* 2012.5.23 add by nhj h4 스타일 리스트 */
+#content ul.list4{clear:both;margin-left:13px;margin-bottom:2.5em}
+#content ul.list4 li{margin-bottom:.4em;padding-left:7px;padding-left:11px;background:url(../images/common/icon_cnt_h4.gif) 0 .2em no-repeat;font-size:1em;font-weight:normal;line-height:1.4em;color:#656565}
+#content ul.list4 li img{display:block;clear:left;margin-top:.3em}
+#content ul.list4 li span img{display:inline-block;margin:0;padding:0 0 5px;vertical-align:middle}
+#content ul.list4 ul{margin-left:0;margin-bottom:1em;margin-top:5px}
+#content ul.list4 li li{margin-bottom:.4em;padding-left:7px;background:url(../images/common/icon_li1.gif) 0 .5em no-repeat}
+#content ul.list4 img{padding-bottom:.4em}
+#content ul.list4 li em{color:#4672ae}
+#content ul.list4 strong{font-weight:bold}
+
+/* 2012.5.23 add by nhj 주의사항 표시용 */
+div.warning{margin-left:1.5em;color:#C22525}
+#content .warning h5{margin-bottom:.5em;font-weight:bold}
+#content .warning ul.list2{clear:both;margin-left:1em;margin-bottom:1em}
+#content .warning ul.list2 li{margin-bottom:.3em;padding-left:9px;background:url(../images/common/icon_li_warning.html) 0 .5em no-repeat;line-height:1.4em;color:#C22525}
+
+#content ul.list_h4{clear:both;margin-left:13px;margin-bottom:.7em}
+#content ul.list_h4 li{margin-bottom:.4em;padding-left:7px;padding-left:11px;background:url(../images/common/icon_cnt_h4.gif) 0 50% no-repeat;font-size:1em;font-weight:normal;line-height:1.4em;color:#3d71b5}
+#content ul.list_h4 li img{display:block;clear:left;margin-top:.3em}
+#content ul.list_h4 li span img{display:inline-block;margin:0;padding:0 0 5px;vertical-align:middle}
+#content ul.list_h4 img{padding-bottom:.4em}
+#content ul.list_h4 li em{color:#4672ae}
+#content ul.list_h4 strong{font-weight:bold}
+
+#content ul.list_h4_orange{clear:both;margin-left:13px;margin-bottom:.7em}
+#content ul.list_h4_orange li{margin-bottom:.4em;padding-left:7px;padding-left:11px;background:url(../images/common/icon_cnt_h4.gif) 0 50% no-repeat;font-size:1em;font-weight:normal;line-height:1.4em;color:#C22525}
+#content ul.list_h4_orange li img{display:block;clear:left;margin-top:.3em}
+#content ul.list_h4_orange li span img{display:inline-block;margin:0;padding:0 0 5px;vertical-align:middle}
+#content ul.list_h4_orange img{padding-bottom:.4em}
+#content ul.list_h4_orange li em{color:#4672ae}
+#content ul.list_h4_orange strong{font-weight:bold}
+#content ul.list_h4_orange2{clear:both;margin-bottom:.7em}
+#content ul.list_h4_orange2 li{margin:0 0 10px 12px;padding-left:10px;color:#C22525;line-height:1.3em;background:url(../images/common/icon_cnt_h4.gif) 0 1px no-repeat}
+
+/* OL 1) 2) 스타일 리스트 */
+#content ol.ol_list1{margin:.3em 0;padding:0;counter-reset:item}
+#content ol.ol_list1 li{display:block;margin:0 0 .2em;padding:0;background:none;list-style-type:decimal;list-style-position:inside}
+#content ol.ol_list1 li:before{content:'counter(item)"\') ';counter-increment:item}
+
+/* span */
+.bold{font-weight:bold}
+
+/* 0510  moon edit */
+.green_16_bold{font-size:16px;font-weight:bold;color:#21b24b}
+.green_bold{font-weight:bold;color:#21b24b}
+
+/* dl dt dd 정의 */
+dl{clear:both;width:100%;margin-left:13px;margin-bottom:20px}
+dt,dd{float:left;margin-bottom:20px}
+
+/* 0510  moon edit */
+dt{width:30%}
+dd{width:70%}
+.dl_c_fix{clear:both;width:100%;height:0;margin-bottom:20px}
+.dl_glo{overflow:hidden;clear:both;width:100%;height:auto;border-bottom:1px solid #CDDAEB}
+.dl_glo dl{clear:both;margin:0;padding:0}
+.dl_glo dt{width:100%;margin-bottom:12px;padding:7px;border-top:2px solid #7f9ec7;border-bottom:1px solid #cddaeb;background:#f4f4f4;font-weight:bold}
+.dl_glo dd{width:647px;margin-bottom:0;padding:0 10px;padding-bottom:20px;line-height:1.5em}
+
+/* 본문에 광범위하게 표시되는 중간정렬 텍스트 */
+p.t_center{width:100%;padding:3em;background:#FFF;color:#333;text-align:center}
+
+/* img align */
+.img_center{clear:both;width:100%;margin-bottom:20px;text-align:center}
+.img_center img{display:inline-block}
+.img_left{clear:both;width:100%;margin-bottom:20px;margin-left:18px;text-align:left}
+
+/* 0509  moon edit */
+.img_left span img{margin-right:20px}
+#content ul li img.span,#content ul.list2 li img.span{display:inline;margin:0 .2em;padding:0;vertical-align:middle}
+
+/* align */
+.align_center{text-align:center}
+
+/* 0509  moon edit */
+.float_left{float:left}
+.float_right{float:right}
+.align_middle{vertical-align:middle}
+.align_left{text-align:left}
+.align_bottom{vertical-align:bottom}
+.align_top{vertical-align:top}
+.dis_inline{display:inline}
+
+/* footer */ 
+/* 2019-01-28 수정 시작 */
+.footer_menu_bg{height:162px;}
+.footer_2018 {display:block;width:100%;min-width:1100px;border-top:1px solid #acacac;background:#fff;border-bottom:1px solid #ebebeb;}
+.footer_2018 .footer{position:relative;width:100%;border-bottom:1px solid #e5e5e5;}
+.footer_2018 .f_col{position:relative;width:994px;padding:11px 0 9px;font-size:0;margin:0 auto;}
+.footer_2018 .f_select{position:relative;display:inline-block;height:38px;margin-right:-1px;border:1px solid #c2c2c2;vertical-align:top;}
+.footer_2018 .f_select .sel{position:relative;display:block;height:38px;line-height:38px;padding:0 25px 0 10px;font-size:14px;background:#fff}
+.footer_2018 .f_select .sel:before{content:"";position:absolute;top:0;bottom:0;right:10px;width:8px;height:5px;margin:auto 0;background:url(https://www.koroad.or.kr/images/portal/common2018/ico_f_arrowDown2.png) no-repeat 0 0;}
+.footer_2018 .f_select .option{display:none;position:absolute;width:100%;left:-1px;bottom:37px;border:1px solid #c2c2c2;border-bottom:1px solid #fff;background:#fff;z-index:30;}
+.footer_2018 .f_select .option a{display:block;padding:5px 10px;font-size:14px;}
+.footer_2018 .f_select .option a:hover{background:#eee;}
+.footer_2018 .f_select:nth-of-type(2) a img{padding:10px 0;} 
+.footer_2018 .f_banner{position:absolute;left:320px;top:20px;overflow:hidden;}
+.footer_2018 .f_banner li{float:left}
+.footer_2018 .f_banner li~li{margin-left:22px;}
+.footer_2018 .f_banner a{font-size:14px;letter-spacing:-1px;}
+.footer_2018 .side{position:absolute;top:15px;right:0;}
+.footer_2018 .side a{display:inline-block;width:70px;height:31px;line-height:29px;text-align:center;font-size:14px;font-weight:700;border-radius:3px;box-sizing:border-box;}
+.footer_2018 .side a:nth-child(1){color:#0d72d0;margin-right:7px;}
+.footer_2018 .side a:nth-child(2){color:#fff;background:#3189dc;}
+.footer_2018 .address{position:relative;width:799px;margin:0 auto;padding-left:195px;background:url(https://www.koroad.or.kr/images/portal/common2018/btm_logo.png) no-repeat 0 30px;color:#747474;}
+.footer_2018 .address p:nth-of-type(1){padding-top:32px;font-size:14px;}
+.footer_2018 .address p:nth-of-type(1) strong{color:#181818;font-weight:bold;margin-left:10px;}
+.footer_2018 .address p:nth-of-type(2){margin-top:4px;font-size:14px;}
+.footer_2018 .certify{position:absolute;right:0;top:26px;}
+.footer_2018 .certify img{margin-left:15px;}
+.footer_2018 #footer_js {width:994px;height:34px;margin:0 auto;}
+.footer_2018 .footer_addr {position:relative;width:100%;padding-bottom:35px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-top:1px solid #ebebeb;}
+/* 2019-01-28 수정 끝 */
+
+
+/* CSS sprite footer 이미지 메뉴 */
+.txt_footer1,.txt_footer2,.txt_footer3,.txt_footer4,.txt_footer5,.txt_footer6,.txt_footer7,.txt_footer8,.txt_footer9 {display:block;overflow:hidden;position:relative;width:38px;height:12px;margin:0}
+.txt_footer1 a,.txt_footer2 a,.txt_footer3 a,.txt_footer4 a,.txt_footer5 a,.txt_footer6 a,.txt_footer7 a,.txt_footer8 a,.txt_footer9 a{display:block;position:absolute;top:0;left:0;width:38px;height:12px;background:url(../images/common/txt_footer_menus.gif) 0 0 no-repeat;text-indent:-9999em}
+.txt_footer1 a,.txt_footer2 a,.txt_footer3 a,.txt_footer4 a,.txt_footer5 a,.txt_footer6 a,.txt_footer7 a,.txt_footer9 a{cursor:pointer}
+.txt_footer1{width:38px}
+
+/* 이용약관 */
+.txt_footer1 a{width:38px;background-position:0 0}
+.txt_footer2{width:74px}
+
+/* 개인정보취급방침 */
+.txt_footer2 a{width:74px;background-position:-54px 0}
+.txt_footer3{width:83px}
+
+/* 이메일무단수집거부 */
+.txt_footer3 a{width:83px;background-position:-145px 0}
+.txt_footer4{width:39px}
+
+/* 고객헌장 */
+.txt_footer4 a{width:39px;background-position:-243px 0}
+.txt_footer5{width:65px}
+
+/* 임직원행동강령 */
+.txt_footer5 a{width:65px;background-position:-297px 0}
+.txt_footer6{width:74px}
+
+/* 홈페이지개선의견 */
+.txt_footer6 a{width:74px;background-position:-379px 0}
+.txt_footer7{width:60px}
+
+/* 찾아오시는길 */
+.txt_footer7 a{width:60px;background-position:-470px 0}
+.txt_footer8{width:56px}
+
+/* 뷰어다운로드 */
+.txt_footer8 a{width:56px;background-position:-546px 0}
+.txt_footer9{width:30px}
+
+/* 조직도 */
+.txt_footer9 a{width:30px;background-position:-618px 0}
+
+
+/* CSS sprite 뷰어 아이콘 */
+.icon_viewer_hwp,.icon_viewer_ppt,.icon_viewer_xls,.icon_viewer_doc,.icon_viewer_pdf,.icon_viewer_swf{display:block;overflow:hidden;position:relative;width:16px;height:16px;margin:0}
+.icon_viewer_hwp span,.icon_viewer_ppt span,.icon_viewer_xls span,.icon_viewer_doc span,.icon_viewer_pdf span,.icon_viewer_swf span{display:block;position:absolute;top:1px;left:1px;width:16px;height:16px;background:url(../images/common/icon_viewer_files.png) 0 0 no-repeat;text-indent:-9999em;cursor:pointer}
+.icon_viewer_hwp span{background-position:0 0}
+.icon_viewer_doc span{background-position:-20px 0}
+.icon_viewer_ppt span{background-position:-40px 0}
+.icon_viewer_xls span{background-position:-60px 0}
+.icon_viewer_pdf span{background-position:-80px 0}
+.icon_viewer_swf span{background-position:-100px 0}
+
+/* default table */
+table{width:100%;border:0;border-top:1px solid #ccc;border-spacing:0}
+table thead th{font-weight:bold}
+table td,table th{text-align:center}
+table tbody td,table tbody th{border:0;border-bottom:1px solid #ccc}
+table td a,table th a{color:#656565;text-decoration:none}
+table td a:hover,table th a:hover{text-decoration:underline}
+table tbody td{padding:.55em 0}
+table tbody td img{vertical-align:middle}
+
+/* data table */
+table.datatable{width:100%;margin-bottom:20px;border:0;border-left:1px solid #dcdcdc;border-top:2px solid #7f9ec7;border-collapse:collapse;border-spacing:0}
+table.datatable td,table.datatable th{padding:.5em;border-right:1px solid #dcdcdc;border-bottom:1px solid #dcdcdc;line-height:1.4em;text-align:center}
+table.datatable thead th{background:#ececec;font-weight:bold;color:#3b3b3b}
+table.datatable tfoot th{background:#fbfbc4;font-weight:bold;color:#3b3b3b}
+table.datatable tfoot td{background:#fbfbc4;font-weight:bold;color:#3b3b3b}
+table.datatable thead th.t_colgroup{background:#ececec;color:#656565}
+table.datatable tbody th{background:#f4f4f4;font-weight:bold;color:#3b3b3b}
+table.datatable tbody th.t_rowgroup{background:#f4f4f4;font-weight:bold;color:#656565}
+table.datatable tbody th.t_rowgroup_left{background:#f4f4f4;color:#656565;text-align:left}
+table.datatable td a,table.datatable th a{color:#656565;text-decoration:none}
+table.datatable td a:hover,table.datatable th a:hover{text-decoration:underline}
+table.datatable td{background:#fff;color:#656565}
+table.datatable td img{display:inline-block;width:auto;margin:0 auto}
+table.datatable td.t_left{text-align:left}
+table.datatable td.t_left2{text-align:left;padding-left:18px;}
+table.datatable td.t_center{text-align:center}
+table.datatable td.t_right{text-align:right}
+table.datatable tbody td img{vertical-align:middle}
+table.datatable tbody td a.t_link{color:#3479c3}
+
+/* td 기본 왼쪽 정렬 data table */
+table.datatable_left{width:100%;margin-bottom:20px;border:0;border-left:1px solid #dcdcdc;border-top:2px solid #7f9ec7;border-collapse:collapse;border-spacing:0}
+table.datatable_left td,table.datatable_left th{padding:.5em;padding:5px 10px;border-right:1px solid #dcdcdc;border-bottom:1px solid #dcdcdc;line-height:1.4em;text-align:left}
+table.datatable_left thead th{background:#ececec;font-weight:bold;color:#3b3b3b;text-align:center}
+table.datatable_left tfoot th{background:#fbfbc4;font-weight:bold;color:#3b3b3b;text-align:center}
+table.datatable_left tfoot td{background:#fbfbc4;font-weight:bold;color:#3b3b3b}
+table.datatable_left thead th.t_colgroup{background:#ececec;color:#656565;text-align:center}
+table.datatable_left tbody th{background:#f4f4f4;font-weight:bold;color:#3b3b3b;text-align:center}
+table.datatable_left tbody th.t_rowgroup{background:#f4f4f4;font-weight:bold;color:#656565}
+table.datatable_left tbody th.t_rowgroup_left{background:#f4f4f4;color:#656565;text-align:left}
+table.datatable_left td a,table.datatable_left th a{color:#656565;text-decoration:none}
+table.datatable_left td a:hover,table.datatable_left th a:hover{text-decoration:underline}
+table.datatable_left td{background:#fff;color:#656565}
+table.datatable_left td img{display:inline-block;width:auto;margin:0 auto}
+table.datatable_left td.t_center{text-align:center}
+table.datatable_left td.t_right{text-align:right}
+table.datatable_left tbody td img{vertical-align:middle}
+table.datatable_left td.t_center2{text-align:center;background:#f8f8f8;font-weight:bold;color:#3b3b3b;} /* 사이버전시관 20130726 추가 */
+table.datatable_left td.pd{padding:15px;} /* 연구분야수정 20130925 추가 */
+table.datatable_left td div ul li{padding-left:7px;background:url(../images/common/icon_li1.gif) 0 5px no-repeat;} /* 연구분야수정 20130925 추가 */
+
+/* 외곽선 있는 박스 */
+.box_outline{display:block;width:100%;height:auto;margin:0 0 20px;padding:0;background:url(../images/common/bg_box_top_l.gif) left top no-repeat}
+.box_outline .b_outer{background:url(../images/common/bg_box_top_r.gif) right top no-repeat}
+.box_outline .b_inner{background:url(../images/common/bg_box_outline_bot_l.gif) left bottom no-repeat}
+.box_outline .b_content{padding:20px;background:url(../images/common/bg_box_outline_bot_r.gif) right bottom no-repeat}
+.box_outline .b_content p.top{padding-top:20px;line-height:1.4em}
+.box_outline .b_content p{padding:0;line-height:1.4em}
+.box_outline ul{overflow:hidden;clear:both;width:100%;height:auto}
+.box_outline ul li{float:left;width:33%;text-align:center}
+
+/* 파란색 외곽선 있는 박스 */
+.box_blueline{display:block;width:100%;height:auto;margin:0 0 20px;padding:0;background:url(../images/common/bg_box_blueline_top_l.gif) left top no-repeat}
+.box_blueline .b_outer{background:url(../images/common/bg_box_blueline_top_r.gif) right top no-repeat}
+.box_blueline .b_inner{background:url(../images/common/bg_box_blueline_bot_l.gif) left bottom no-repeat}
+.box_blueline .b_content{padding:20px;background:url(../images/common/bg_box_blueline_bot_r.gif) right bottom no-repeat}
+.box_blueline .b_content p.top{padding-top:20px;line-height:1.4em}
+.box_blueline .b_content p{padding:0;line-height:1.4em}
+.box_blueline ul{overflow:hidden;clear:both;width:100%;height:auto}
+.box_blueline ul li{float:left;width:33%;text-align:center}
+
+/* 외곽선 하단에 배경색 들어 있는 박스 */
+.box_bottom_bg{display:block;width:100%;height:auto;margin:0 0 20px;padding:0;background:url(../images/common/bg_box_top_l.gif) left top no-repeat}
+.box_bottom_bg .b_outer{background:url(../images/common/bg_box_top_r.gif) right top no-repeat}
+.box_bottom_bg .b_content{padding:20px}
+.box_bottom_bg .b_inner{background:url(../images/common/bg_box_bot_l.gif) left bottom no-repeat}
+.box_bottom_bg .b_inner p{padding:20px;background:url(../images/common/bg_box_bot_r.gif) right bottom no-repeat;line-height:1.4em}
+.box_bottom_bg ul{overflow:hidden;clear:both;width:100%;height:auto}
+.box_bottom_bg ul li{float:left;width:33%;text-align:center}
+
+/* 전체 회색 박스 */
+.box_gray{display:block;clear:both;width:100%;height:auto;margin:0 0 20px;padding:0;background:url(../images/common/bg_gbox_top_l.gif) left top no-repeat;}
+.box_gray:after{display:block;clear:both;content:' '}
+.box_gray .b_outer{background:url(../images/common/bg_gbox_top_r.gif) right top no-repeat}
+.box_gray .b_inner{background:url(../images/common/bg_gbox_bot_l.gif) left bottom no-repeat}
+.box_gray .b_content{padding:20px;background:url(../images/common/bg_gbox_bot_r.gif) right bottom no-repeat}
+.box_gray .b_content p{padding:0;line-height:1.4em}
+.box_gray .b_content ul li.txt{padding:0;line-height:1.5em;margin-bottom:-4px;} /* 사이버전시관 20130726 추가 */
+
+/*
+콘텐츠 하단 콘텐츠 매니저 표시용 - add 2012.5.9 nhj
+*/
+.content_manager{clear:both;width:100%;height:40px;padding-top:30px}
+.inner_content_manager{width:100%;height:32px;background:url(../images/common/bg_content_manager.gif) right top no-repeat}
+#content .content_manager h3{float:left;width:117px;height:32px;margin:0;padding:0;background:none}
+.inner_content_manager ul{float:left}
+.inner_content_manager ul li{display:inline;float:left;width:auto;margin:7px 10px 0;padding-left:8px;background:url(../images/common/icon_cm.gif) 0 50% no-repeat;line-height:1.5em;color:#656565}
+.inner_content_manager ul li strong{font-weight:bold}
+
+/* 
+P.I.E. FLOAT CLEARING ----------------------------
+See http://www.positioniseverything.net/easyclearing.html
+and http://www.456bereastreet.com/archive/200603/new_clearing_method_needed_for_ie7/
+*/
+.clearfix:after{display:block;visibility:hidden;clear:both;height:0;content:'.'}
+.clearfix{width:100%; display:block}
+p.clearfix {width:auto;}
+
+/*
+------------------------------------
+선택자를 통합해 코드분량을 줄인 자동해제.
+ie용은 별도의 css에 관리할 것. */
+#wrap:after,#container:after,#content:after,.lnb:after{/* :after 기능을 지원하는 브라우저를 위한 규칙 */display:block;visibility:hidden;clear:both;height:0;content:'.'}
+* html #wrap,* html #container,* html #content,* html .lnb{height:1%}
+
+/* ie5, ie6 용 */
+:first-child+html #wrap,:first-child+html .over_banner_area,:first-child+html #flashArea,:first-child+html #top1over,:first-child+html #top2over,:first-child+html #top3over{left:0}
+
+/* ie7 */
+
+
+
+
+/* 사이트맵 운전면허 사이트 바로가기  20160106 */
+.sitemap_licensego2 {padding-bottom: 40px;}
+
+
+
