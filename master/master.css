@@ -1,0 +1,106 @@
+/* common */
+* {font-family: 'Noto Sans KR', sans-serif;}
+.inner {width: 950px; margin: 0 auto; position: relative; text-align: center;}
+.inner:after {content:""; display: block; clear: both;}
+.spacer {width: 100%; height: 100%;}
+area {outline: none;}
+.ani{opacity: 0;opacity:1 \0/IE9;}
+
+/* quickBanner */
+.quickBanner {position: fixed; top: 250px; right: 100px; z-index: 999;}
+.quickBanner li {margin-top: 10px;}
+
+/* contents */
+.topWrap {padding: 60px 0 5px;}
+.topWrap li {margin-top: 16px;}
+.topWrap li:first-child {margin-top: 0;}
+.topWrap p {padding-top: 24px; text-align: right;}
+.topWrap .ani.top01 { transform: translateY(-50%); animation: slideInUp .2s .2s linear both;  z-index: 2;}
+.topWrap .ani.top02 { transform: translateY(-50%); animation: slideInUp .2s .4s linear both;  z-index: 2;}
+.topWrap .ani.top03 { transform: translateY(-50%); animation: slideInUp .2s .6s linear both;  z-index: 2;}
+.topWrap .ani.top04 { transform: translateY(-50%); animation: slideInUp .2s .8s linear both;  z-index: 2;}
+
+
+.main {padding: 148px 0 205px; background: #1B1D1F;}
+.main .inner {height: 100%;}
+.main .bg {position: absolute; left: 50%; margin-left: -678px; top: 90px; animation: zoomAni .3s 1s linear both; }
+.main .ani.no1 { transform: translateY(-50%); animation: slideInUp .3s 1.5s linear both;  z-index: 2;}
+.main .ani.no2 {padding: 40px 0; transform: translateY(50%); animation: slideInUp .3s 1.8s linear both;}
+.main .ani.no3{ transform: translateY(50%); animation: slideInUp .3s 2.1s linear both; z-index: 2;}
+
+@keyframes slideInUp {
+    100%{transform: translateY(0);opacity: 1;}
+}
+
+@keyframes slideInLeft {
+    100%{transform: translateX(0);opacity: 1;}
+}
+
+@keyframes zoomAni {
+    0% {transform: scale(.4); opacity: 0;}
+    100% {transform: scale(1); opacity: 1;}
+}
+
+@keyframes twinkle_one {
+0%   { opacity: 1; }
+30%  { opacity: 1; }
+70%  { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.page {padding-top: 80px;}
+.page h4 {padding-bottom: 40px;}
+
+.sub02 .inner {width: 100%;}
+.sub02 .sub02_slide .tab {width: 950px; margin: 0 auto; z-index: 10; box-sizing: border-box;}
+.sub02 .sub02_slide .tab:after {content:""; display: block; clear: both;}
+.sub02 .sub02_slide .tab .pager {width: 237.5px; padding: 15px 0; line-height: 20px; float: left; display: inline-block; font-size: 16px; font-weight: bold; color: #9EA4AA; background: #E9E9E9;}
+.sub02 .sub02_slide .tab .pager.active {color: #fff; background: #111;}
+.sub02 .sub02_slide .tabCnt {background: #111;}
+.sub02 .sub02_slide .tabCnt .bx-wrapper{position: relative; margin: 0 auto;}
+.sub02 .sub02_slide .bx-wrapper .bx-controls-direction a{position: absolute;top: 50%; margin-top: -28px; width:24px;height: 56px; text-indent: -9999px;  }
+.sub02 .sub02_slide .bx-wrapper .bx-controls-direction a.bx-prev{left:-50px; background:url('http://s3.ap-northeast-2.amazonaws.com/st.dev.dangidata/gyung_dangicokr/img/landing/2020/off_master_class/btnPrev.png') no-repeat;}
+.sub02 .sub02_slide .bx-wrapper .bx-controls-direction a.bx-next{right:-50px; background:url('http://s3.ap-northeast-2.amazonaws.com/st.dev.dangidata/gyung_dangicokr/img/landing/2020/off_master_class/btnNext.png') no-repeat;}
+
+.sub03 .teaList {margin: -32px 0 0 -22px;}
+.sub03 .teaList:after {content:""; display: block; clear: both;}
+.sub03 .teaList li {position: relative; float: left; margin: 32px 0 0 22px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); border-radius: 8px; box-sizing: border-box;}
+.sub03 .teaList li a {display: block;}
+.sub03 .teaList li a:before {content:""; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border: 7px solid transparent; opacity: 0; border-radius: 8px; box-sizing: border-box; transition: all .2s ease-in-out;}
+.sub03 .teaList li:hover a:before {opacity: 1; border-color: #37DCBE;}
+
+.sub04 .list {position: relative;}
+.sub04 .list ul { position: absolute; top: 0; left: 0; }
+.sub04 .list li {width: 950px; height: 80px; margin-top: 12px;}
+.sub04 .list li:first-child {margin-top: 0;}
+.sub04 .list li span { font-size: 0; text-indent: -9999px; color: transparent;}
+.sub04 .list li span.highlight {width: 100%; height: 100%; border: 5px solid #37DCBE; display: inline-block;  box-sizing: border-box; animation: twinkle_one 2s .3s ease-in-out infinite;}
+
+.sub05 p {box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.2);}
+
+.sub06 .inner {width: 100%;}
+.sub06 .sub06_slide .tab {width: 950px; margin: 0 auto; z-index: 10; box-sizing: border-box;}
+.sub06 .sub06_slide .tab:after {content:""; display: block; clear: both;}
+.sub06 .sub06_slide .tab .pager {width: 158px; padding: 15px 0; line-height: 20px; float: left; display: inline-block; font-size: 16px; font-weight: bold; color: #9EA4AA; background: #E9E9E9;}
+.sub06 .sub06_slide .tab .pager.active {color: #fff; background: #111;}
+.sub06 .sub06_slide .tabCnt {background: url('http://s3.ap-northeast-2.amazonaws.com/st.dev.dangidata/gyung_dangicokr/img/landing/2020/off_master_class/sub06_bg.jpg') top center;}
+.sub06 .sub06_slide .tabCnt .bx-wrapper{position: relative; margin: 0 auto;}
+.sub06 .sub06_slide .bx-wrapper .bx-controls-direction a{position: absolute;top: 50%; margin-top: -28px; width:24px;height: 56px; text-indent: -9999px;  }
+.sub06 .sub06_slide .bx-wrapper .bx-controls-direction a.bx-prev{left:-50px; background:url('http://s3.ap-northeast-2.amazonaws.com/st.dev.dangidata/gyung_dangicokr/img/landing/2020/off_master_class/btnPrev.png') no-repeat;}
+.sub06 .sub06_slide .bx-wrapper .bx-controls-direction a.bx-next{right:-50px; background:url('http://s3.ap-northeast-2.amazonaws.com/st.dev.dangidata/gyung_dangicokr/img/landing/2020/off_master_class/btnNext.png') no-repeat;}
+
+.sub07 li {margin-top: 64px;}
+.sub07 li:first-child {margin-top: 0;}
+
+.bnr_event {margin-top: 80px; text-align: center;}
+
+.sub08 .btnGo {padding-top: 24px;}
+.sub08 .btnGo:after {content:""; display: block; clear: both;}
+.sub08 .btnGo li {display: inline-block; vertical-align: middle;}
+.sub08 .btnGo li:first-child {margin-right: 8px;}
+
+.bnr_last {padding: 80px 0 200px; text-align: center;}
+
+.sec_notice .btnOpen {display:block;line-height:70px;height:70px;background:#414141; color: #fff; font-size: 22px; font-weight: bold; text-align: center;}
+.sec_notice .btnOpen.on {}
+.sec_notice .cnt .inner {padding: 80px 0; text-align: left; font-size: 15px; line-height: 1.5;}
