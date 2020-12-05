@@ -1,20 +1,12 @@
 $(document).ready(function(){
-    $('.sub02_slide ul').bxSlider({
+    /* .top_slide slider */
+    $('.top_slide ul').bxSlider({
+        mode: 'fade',
         auto: true,
-        controls: true,
-        pager: true,
+        pager: false,
+        controls: false,
         infiniteLoop:true,
-        slideWidth: 950,
-        pagerCustom: '.sub02_slide .tab'
-    });
-
-    $('.sub06_slide ul').bxSlider({
-        auto: true,
-        controls: true,
-        pager: true,
-        infiniteLoop:true,
-        slideWidth: 950,
-        pagerCustom: '.sub06_slide .tab'
+        slideWidth: 995,
     });
 
     /* .slide_area slider */
@@ -22,9 +14,8 @@ $(document).ready(function(){
         auto: true,
         pager: false,
         controls: false,
-        infiniteLoop:true,
-        slideWidth:995,
-        //slideMargin:10,
+        infiniteLoop: true,
+        slideWidth: 995,
         onSliderLoad:function(currentIndex){
             $('.slide_area ul li').eq(currentIndex+1).addClass('on');
         },
@@ -34,14 +25,4 @@ $(document).ready(function(){
         }
     });
 
-
-
 });
-
-// 해당 영역으로 이동하기
-function goPage(el) {
-    $('html, body').stop().animate({
-        scrollTop: $(el).offset().top
-    }, 'slow');
-    return false;
-};
