@@ -2,8 +2,8 @@
 .inner {width: 995px; margin: 0 auto; position: relative; text-align: center;}
 
 /* .sect01 */
-.sect01{width: 100%;overflow: hidden;background: #ecf0f4;}
-.sect01 .top_slide{position: relative}
+.top{width: 100%;overflow: hidden;background: #ecf0f4;}
+.top .top_slide{position: relative}
 
 /* .sect02 */
 .sect02{padding: 35px 0;}
@@ -131,3 +131,23 @@
 .sect07 .sub03 ul li a{color: #0d72d0;}
 .sect07 .sub03 ul li:last-child{margin-right: 0;background: #3189dc;border-radius: 5px;}
 .sect07 .sub03 ul li:last-child a{color: #ffffff;}
+
+/* .sect08 */
+.sect08{padding: 15px 0;border-top: 1px solid #e5e5e5;}
+.sect08 .inner{text-align: left;}
+.sect08 .inner > div{display: inline-block;vertical-align: top;margin-right: 5px;}
+.sect08 .inner > div:last-child{margin-right: 0;}
+
+.sect08 .sub01 ul{overflow: hidden;margin: 6px 10px 6px 0;}
+.sect08 .sub01 ul::after{content: '';display: block;clear: both;}
+.sect08 .sub01 ul li{float: left;overflow: hidden;border-left: 1px solid #cecece;padding: 0 10px;}
+.sect08 .sub01 ul li:first-child{padding-left: 0;border-left: 0;}
+.sect08 .sub01 ul li a{color: #666666;}
+.sect08 .sub01 ul li:first-child a{color: #36923a;font-weight: bold;}
+
+.sect08 .sub02{position: absolute;right: 0;}
+.sect08 .sub02 label{color: #666666;}
+.sect08 .sub02 select{width: auto;margin-right: 5px;background: #eaeaea;height: 28px;;}
+.sect08 .sub02 a{width: 60px;height: 30px;background: #90949d;font-weight: bold;float: right;text-align: center;line-height: 2.5em;color: #ffffff;border-radius: 5px;}
+
+/* .bottom */
