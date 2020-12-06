@@ -169,7 +169,7 @@
 
 .sect08 .sub02{position: absolute;right: 0;}
 .sect08 .sub02 label{color: #666666;}
-.sect08 .sub02 select{width: auto;margin-right: 5px;background: #eaeaea;height: 28px;;}
+.sect08 .sub02 select{width: auto;margin-right: 5px;background: #eaeaea;height: 28px;border-radius: 5px;}
 .sect08 .sub02 a{width: 60px;height: 30px;background: #90949d;font-weight: bold;float: right;text-align: center;line-height: 2.5em;color: #ffffff;border-radius: 5px;}
 
 /* .bottom */
