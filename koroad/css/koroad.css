@@ -96,10 +96,15 @@
 .sect06 .sub03 .tab_menu li.on{font-weight: bold;}
 .sect06 .sub03 .tab_menu li.on a{color: #3189dc;}
 
-.sect06 .sub03 .tab_cont{text-align: left;margin: 20px;}
+.sect06 .sub03 .tab_cont{text-align: left;margin: 20px 30px;}
 .sect06 .sub03 .tab_cont .news ul{overflow: hidden;}
 .sect06 .sub03 .tab_cont .news ul::after{content: '';display: block;clear: both;}
 .sect06 .sub03 .tab_cont .news ul li{margin: 0 0 20px;height: 75px;overflow: hidden;}
 .sect06 .sub03 .tab_cont .news ul li:last-child{margin: 0;}
 .sect06 .sub03 .tab_cont .news p{font-size: 15px;font-weight: bold;height: 20px;}
 .sect06 .sub03 .tab_cont .news em{color: #747474;}
+
+.sect06 .sub03 .tab_cont .noti ul{overflow: hidden;}
+.sect06 .sub03 .tab_cont .noti ul::after{content: '';display: block;clear: both;}
+.sect06 .sub03 .tab_cont .noti ul li{height: 45px;overflow: hidden;font-size: 16px;font-weight: bold;}
+.sect06 .sub03 .tab_cont .noti ul li img{margin-right: 5px;vertical-align: baseline;}
