@@ -1,6 +1,5 @@
 /* common */
 .inner {width: 995px; margin: 0 auto; position: relative; text-align: center;}
-.inner:after {content:""; display: block; clear: both;}
 
 /* .sect01 */
 .sect01{width: 100%;overflow: hidden;background: #ecf0f4;}
@@ -22,3 +21,22 @@
 .sect03 .slide_area li{opacity: 0.5;}
 .sect03 .slide_area li.on{opacity: 1;}
 
+/* .sect04 */
+.sect04{padding: 30px 0 0;}
+.sect04 .inner{border: 1px solid #d7d7d7;text-align: left;}
+.sect04 h3{margin: 35px;font-size: 30px;line-height: 1em;}
+.sect04 ul{overflow: hidden;margin: 0 35px 35px;}
+.sect04 ul:after{content: "";display: block;clear: both;}
+.sect04 ul li{float: left;position: relative;width: 220px;height: 170px;border: 1px solid;margin-right: 12px;}
+.sect04 ul li:last-child{margin-right: 0;}
+.sect04 ul li strong {display: block;height: 49px;background: #2da75e;font-size: 15px;color: #ffffff;}
+.sect04 ul li strong:before {display: inline-block;content:'';width: 60px;height: 33px;background: url('https://www.koroad.or.kr/images/images2019/portal/common2018/m2018_block09_01.png') no-repeat;}
+.sect04 ul li:nth-child(2) strong {background: #2ea786;}
+.sect04 ul li:nth-child(2) strong:before {background: url('https://www.koroad.or.kr/images/images2019/portal/common2018/m2018_block09_02.png') no-repeat;}
+.sect04 ul li:nth-child(3) strong {background: #488abe;}
+.sect04 ul li:nth-child(3) strong:before {background: url('https://www.koroad.or.kr/images/images2019/portal/common2018/m2018_block09_03.png') no-repeat;}
+.sect04 ul li:nth-child(4) strong {background: #586fc8;}
+.sect04 ul li:nth-child(4) strong:before {background: url('https://www.koroad.or.kr/images/images2019/portal/common2018/m2018_block09_04.png') no-repeat;}
+.sect04 ul li p{text-align: center;line-height: 1.5em;margin: 15px 0;font-size: 14px;}
+.sect04 ul li a{position: absolute;right: 15px;bottom: 10px;color: #c0c0c0;}
+.sect04 ul li a:after {display: inline-block;content: '';margin-left: 5px;margin-bottom: -5px;width: 16px;height: 16px;background:url('https://www.koroad.or.kr/images/images2019/portal/common2018/m2018_ico_05.png') no-repeat;}
