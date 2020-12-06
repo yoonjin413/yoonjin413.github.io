@@ -12,7 +12,7 @@ $(document).ready(function(){
     /* .slide_area slider */
     $('.slide_area ul').bxSlider({
         auto: true,
-        pager: false,
+        pager: true,
         controls: false,
         infiniteLoop: true,
         slideWidth: 995,
@@ -23,6 +23,17 @@ $(document).ready(function(){
             $('.slide_area ul li').removeClass('on');
             $($slideElement).addClass('on');
         }
+    });
+
+    /* .info_slide slider */
+    $('.info_slide ul').bxSlider({
+        auto: true,
+        pager: true,
+        controls: true,
+        infiniteLoop:true,
+        slideWidth: 270,
+        pagerType: 'short',
+        pagerShortSeparator: '/',
     });
 
 });
