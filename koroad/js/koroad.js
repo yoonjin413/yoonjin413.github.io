@@ -36,7 +36,18 @@ $(document).ready(function(){
         pagerShortSeparator: '/',
     });
 
-    
+    /* gnb 메뉴 노출 액션 */
+    $('.gnb > li').on({
+        mouseover: function(){
+            $('.gnb > li').removeClass('on');
+            $('.menu .gnb_sub').css('display', 'none');
+
+            $(this).addClass('on');
+            $('.menu .gnb_sub').eq($(this).index()).css('display', 'block');
+        },
+    });
+
+    /* 공지 탭 메뉴 선택 */
     $('.tab_menu > li').on('click', function() {
         $('.tab_menu > li').each(function(){
             $(this).removeClass('on');
