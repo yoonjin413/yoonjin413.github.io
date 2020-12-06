@@ -1,41 +1,126 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
-
-*{font-family: 'Noto Sans KR', sans-serif;outline: none;color: #000000;}
-
+* {
+    font-family:'Noto Sans KR',sans-serif;
+    outline:none;
+    color: #000000;
+}
 /* Reset */
-body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0;}
-body,h1,h2,h3,h4,h5,h6,input,button,table,select,textarea{font-family:'Malgun Gothic','맑은고딕','맑은 고딕','돋움',Dotum,Helvetica,'Apple SD Gothic Neo',Sans-serif;font-size:12px;columns: #000000;}
-img,fieldset{border:0 none}
-li{list-style:none}
-input,select,button{vertical-align:middle}
-img{vertical-align:top}
-i,em,address{font-style:normal}
-label,button{cursor:pointer}
-button{margin:0;padding:0}
-hr{display:none}
-table{border-collapse:collapse;border-spacing:0}
-input[type=checkbox],input[type=radio]{width:13px;height:13px;border:0 none}
-a{text-decoration:none}
-a:hover{}
-video{display:block}
-
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select {
+    margin:0;
+    padding:0;
+}
+body,h1,h2,h3,h4,h5,h6,input,button,table,select,textarea {
+    font-family:'Noto Sans KR',sans-serif,'Malgun Gothic','맑은고딕','맑은 고딕','돋움',Dotum,Helvetica,'Apple SD Gothic Neo';
+    font-size:12px;
+    columns:#000000;
+}
+img,fieldset {
+    border:0 none
+}
+li {
+    list-style:none
+}
+input,select,button {
+    vertical-align:middle
+}
+img {
+    vertical-align:top
+}
+i,em,address {
+    font-style:normal
+}
+label,button {
+    cursor:pointer
+}
+button {
+    margin:0;
+    padding:0
+}
+hr {
+    display:none
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+input[type=checkbox],input[type=radio] {
+    width:13px;
+    height:13px;
+    border:0 none
+}
+a {
+    text-decoration:none
+}
+a:hover {
+}
+video {
+    display: block
+}
 /* common */
-.ellipsis{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
-.skip{overflow:hidden;position:absolute;top:-999em;left:-999em;width:1px;height:1px}
-
-html,body{width:100%;height:100%}
-html{overflow-y:scroll}
-body{background-color:#fff;*word-break:break-all;-ms-word-break:break-all}
-body,input,button{font-size:12px;line-height:1.5em;font-family:'돋움',Dotum,'굴림',Gulim,AppleGothic,Sans-serif;}
-h1,h2,h3,h4,h5,h6{font-size:12px;}
-img,fieldset,iframe{border:0 none}
-ul li{list-style:none}
-a{text-decoration:none}
-textarea{overflow:auto}
-html:first-child select{height:20px;padding-right:6px}
-option{padding-right:6px}
-em,address{font-style:normal}
-button,label{cursor:pointer;_cursor /**/:hand}
-button *{position:relative}
-button img{left:-3px;*left:auto}
+.ellipsis {
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.skip {
+    overflow:hidden;
+    position:absolute;
+    top:-999em;
+    left:-999em;
+    width:1px;
+    height:1px
+}
+html,body {
+    width:100%;
+    height:100%
+}
+html {
+    overflow-y:scroll
+}
+body {
+    background-color:#fff;
+    *word-break:break-all;
+    -ms-word-break:break-all
+}
+body,input,button {
+    font-size:12px;
+    line-height:1.5em;
+    font-family:'돋움',Dotum,'굴림',Gulim,AppleGothic,Sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:12px;
+}
+img,fieldset,iframe {
+    border:0 none
+}
+ul li {
+    list-style:none
+}
+a {
+    text-decoration:none
+}
+textarea {
+    overflow:auto
+}
+html:first-child select {
+    height:20px;
+    padding-right:6px
+}
+option {
+    padding-right:6px
+}
+em,address {
+    font-style:normal
+}
+button,label {
+    cursor:pointer;
+    _cursor /**/:hand
+}
+button * {
+    position:relative
+}
+button img {
+    left:-3px;
+    *left: auto
+}

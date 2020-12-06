@@ -36,4 +36,17 @@ $(document).ready(function(){
         pagerShortSeparator: '/',
     });
 
+    
+    $('.tab_menu > li').on('click', function() {
+        $('.tab_menu > li').each(function(){
+            $(this).removeClass('on');
+        });
+
+        $(this).addClass('on');
+
+        $('.tab_cont > .con_box').css('display', 'none');
+        $('.tab_cont > .con_box').eq($(this).index()).css('display', 'block');
+    });
+
+    $('.tab_menu > li').eq(0).click();
 });
