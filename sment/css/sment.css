@@ -1,5 +1,23 @@
 /* common */
-.inner {width: 1160px; margin: 0 auto; position: relative; text-align: center;}
+.inner {width: 1160px; margin: 0 auto; position: relative;}
 
 /* .top */
-.top{width: 100%;overflow: hidden;background: #ecf0f4;}
+.top{padding: 40px 0;}
+.top h1{float: left;margin-right: 50px;}
+.top ul{display: inline-block;overflow: hidden;}
+.top ul:after {content: "";display: block;clear: both;}
+
+.top .main li{float: left;width: auto;margin: 0 50px 0 0;line-height: 1em;}
+
+.top .sub{float: right;}
+.top .sub li{float: left;width: auto;padding: 0 15px;line-height: 1em;border-right: 1px solid #cccccc;}
+.top .sub li:last-child{border-right: 0;}
+
+/* .sect01 */
+.sect01{}
+.sect01 .inner{width: 1500px;}
+.sect01 .tab_cont{position: relative;}
+.sect01 .tab_cont .info{position: absolute;left: 100px;top: 200px;/* width: 760px;margin-bottom: 50px; */}
+.sect01 .tab_cont .info p{color: #ffffff;}
+.sect01 .tab_cont .info strong{color: #ffffff;font-size: 48px;line-height: 1.2em;}
+.sect01 .tab_cont .info span{color: #ffffff;}
