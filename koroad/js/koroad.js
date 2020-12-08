@@ -47,6 +47,15 @@ $(document).ready(function(){
         },
     });
 
+    /* gnb 메뉴 노출 액션 */
+    $('.menu').on({
+        mouseleave: function(){
+            $('.gnb > li').removeClass('on');
+            $('.menu .gnb_sub').css('display', 'none');
+            $('.menu .gnb_sub').css('display', 'none');
+        },
+    });
+
     /* 공지 탭 메뉴 선택 */
     $('.tab_menu > li').on('click', function() {
         $('.tab_menu > li').each(function(){
