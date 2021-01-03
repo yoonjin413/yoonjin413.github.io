@@ -21,3 +21,19 @@
 .sect01 .tab_cont .info p{color: #ffffff;}
 .sect01 .tab_cont .info strong{color: #ffffff;font-size: 48px;line-height: 1.2em;}
 .sect01 .tab_cont .info span{color: #ffffff;}
+
+/* .sect02 */
+.sect02{padding: 40px 0 100px;}
+.sect02 ul{overflow: hidden;}
+.sect02 ul:after{content: "";display: block;clear: both;}
+.sect02 ul li{float: left;position: relative;/* border: 1px solid #cccccc; */width: 280px;height: 550px;margin-right: 10px;}
+.sect02 ul li:last-child{margin-right: 0;}
+
+.sect02 .press{border: 1px solid #cccccc;padding: 10px 15px;}
+.sect02 .press h4{margin-bottom: 20px;color: #404040;font-weight: bold;text-transform: uppercase;}
+.sect02 .press .articles{height: 340px;overflow: hidden;}
+.sect02 .press dl{border-bottom: 1px solid #cccccc;}
+.sect02 .press dl dt{font-size: 15px;line-height: 1.5em;font-weight: bold;color: #626262;}
+.sect02 .press dl dd{line-height: 1.5em;color: #626262;}
+
+.sect02 .affiliates{border: 1px solid #cccccc;margin-top: 5px;}
