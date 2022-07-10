@@ -3,6 +3,8 @@
 .inner{width: 1200px; margin: 0 auto; text-align: center;position: relative;}
 .inner:after{content:""; display: block; clear: both;}
 
+.event_220708 ul:after{content: "";display: block;clear: both;}
+
 /* sect01 */
 .sect01{width: 100%;height: 957px;overflow: hidden;background: url("./img/sect01_bg.png") no-repeat center bottom, linear-gradient(95.94deg, #3BBB84 17.56%, #2CA572 83.95%);padding: 25px 0;}
 .sect01 h3{margin-left: -37px;}
@@ -34,3 +36,28 @@
 .sect04 h4 .txt_tit{color: #B5B5B5;}
 .sect04 .cont_thoery{margin: 60px 0 40px;}
 .sect04 .txt_note{color: #000000;font-weight: bold;font-size: 32px;line-height: 1.5em;text-decoration-line: underline;}
+
+/* sect05 */
+.sect05{overflow: hidden;background: #E15A33;padding: 120px 0 119px;}
+.sect05 h4{color: #000000;font-weight: 900;font-size: 42px;line-height: 1.2em;}
+.sect05 h4 .txt_tit{color: #FFFFFF;}
+.sect05 .cont_book{margin-top: 65px;position: relative;}
+.sect05 .cont_book .btn_buy{position: absolute;top: 155px;right: 450px;width: 200px;height: 60px;border: 2px solid #FFFFFF;border-radius: 5px;color: #FFFFFF;font-weight: bold;font-size: 20px;line-height: 1.2em;padding: 15px 0;}
+.sect05 .cont_book .btn_buy i{color: #FFFFFF;margin-left: 3px;}
+.sect05 .cont_review{margin-top: 30px;height: 730px;background: #FFFFFF;position: relative;}
+.sect05 .cont_review .cont_cons{width: 560px;position: absolute;left: 60px;top: 70px;}
+.sect05 .cont_review .cont_cons .txt_tit{color: #000000;font-weight: bold;font-size: 28px;line-height: 1.5em;text-align: left;}
+.sect05 .cont_review .cont_cons ul{margin-top: 54px;}
+.sect05 .cont_review .cont_cons li{margin-bottom: 20px;}
+.sect05 .cont_review .cont_cons li:last-child{margin-bottom: 0;}
+.sect05 .cont_review .cont_slide{position: absolute;top: 112px;right: 95px;}
+.sect05 .cont_review .cont_slide .bx-controls-direction a{position: absolute;top: 252px;width:51px;height:52px;font-size:0;text-indent: 9999em;}
+.sect05 .cont_review .cont_slide .bx-controls-direction a.bx-prev{left: -25px;background: url("./img/sect05_arrow_l.png") 0 0;}
+.sect05 .cont_review .cont_slide .bx-controls-direction a.bx-next{right: -25px;background: url("./img/sect05_arrow_r.png") 0 0;}
+
+/* sect06 */
+.sect06{overflow: hidden;background: #F9F9F9;padding: 120px 0;}
+.sect06 h4{color: #000000;font-weight: 900;font-size: 42px;line-height: 1.2em;}
+.sect06 ul{margin-top: 60px;}
+.sect06 ul li{margin-bottom: 40px;}
+.sect06 ul li:last-child{margin-bottom: 0;}
