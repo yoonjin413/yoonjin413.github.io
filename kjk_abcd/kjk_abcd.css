@@ -1,9 +1,15 @@
 /* common */
-* {font-family: 'Noto Sans KR', sans-serif;outline: none;box-sizing: border-box;}
-.inner {width: 1200px; margin: 0 auto; text-align: center;position: relative;}
+*{box-sizing: border-box;}
+.inner{width: 1200px; margin: 0 auto; text-align: center;position: relative;}
+.inner:after{content:""; display: block; clear: both;}
 
 .d-block{display: block;}
 
-/* sec_01 */
-.sec_01{width: 100%;height: 957px;overflow: hidden;background: url("./img/sect_01/bg.png") no-repeat center bottom, linear-gradient(95.94deg, #3BBB84 17.56%, #2CA572 83.95%);padding: 73px 0 35px;}
-.sec_01 .info{color: #FFFFFF;opacity: .5;}
+/* sect01 */
+.sect01{width: 100%;height: 957px;overflow: hidden;background: url("./img/sect01_bg.png") no-repeat center bottom, linear-gradient(95.94deg, #3BBB84 17.56%, #2CA572 83.95%);padding: 25px 0;}
+.sect01 h3{margin-left: -37px;}
+.sect01 .btn_home{margin: 5px 0 35px;}
+.sect01 .txt_info{color: #FFFFFF;opacity: .5;font-weight: 400;letter-spacing: -0,04em;}
+
+/* sect02 */
+.sect02{width: 100%;height: 690px;overflow: hidden;background: #222222 url("./img/sect02_bg.png") no-repeat center 0;padding: 25px 0;}
