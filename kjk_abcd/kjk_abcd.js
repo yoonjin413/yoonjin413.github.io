@@ -14,10 +14,10 @@ $(function() {
 
     $('.sect05 .cont_slide ul').bxSlider({
         auto: true,
+        controls: true,
         pager: false,
         infiniteLoop: true,
         slideWidth: 404,
-        pause: 3000,
         speed: 700,
     });
 });
