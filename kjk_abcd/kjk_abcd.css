@@ -54,6 +54,7 @@
 .sect05 .cont_review .cont_slide .bx-controls-direction a{position: absolute;top: 252px;width:51px;height:52px;background: url("./img/sect05_arrow_l.png");text-indent: -999em;}
 .sect05 .cont_review .cont_slide .bx-controls-direction a.bx-prev{left: -25px;}
 .sect05 .cont_review .cont_slide .bx-controls-direction a.bx-next{right: -25px;background: url("./img/sect05_arrow_r.png");}
+.sect05 .cont_review .cont_slide .bx-viewport li{width: 404px !important;}
 
 /* sect06 */
 .sect06{overflow: hidden;background: #F9F9F9;padding: 120px 0;}
