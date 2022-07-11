@@ -51,9 +51,9 @@
 .sect05 .cont_review .cont_cons li{margin-bottom: 20px;}
 .sect05 .cont_review .cont_cons li:last-child{margin-bottom: 0;}
 .sect05 .cont_review .cont_slide{position: absolute;top: 112px;right: 95px;}
-.sect05 .cont_review .cont_slide .bx-controls-direction a{position: absolute;top: 252px;width:51px;height:52px;font-size:0;text-indent: 9999em;}
-.sect05 .cont_review .cont_slide .bx-controls-direction a.bx-prev{left: -25px;background: url("./img/sect05_arrow_l.png") 0 0;}
-.sect05 .cont_review .cont_slide .bx-controls-direction a.bx-next{right: -25px;background: url("./img/sect05_arrow_r.png") 0 0;}
+.sect05 .cont_review .cont_slide .bx-controls-direction a{position: absolute;top: 252px;width:51px;height:52px;background: url("./img/sect05_arrow_l.png");text-indent: -999em;}
+.sect05 .cont_review .cont_slide .bx-controls-direction a.bx-prev{left: -25px;}
+.sect05 .cont_review .cont_slide .bx-controls-direction a.bx-next{right: -25px;background: url("./img/sect05_arrow_r.png");}
 
 /* sect06 */
 .sect06{overflow: hidden;background: #F9F9F9;padding: 120px 0;}
