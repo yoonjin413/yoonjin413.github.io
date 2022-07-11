@@ -20,5 +20,13 @@ $(function() {
         slideWidth: 404,
         speed: 700,
     });
+
+    $('.sect09 .btn_cert').on('click', function() {
+        $('.sect10').css('display', 'block');
+    });
 });
+
+var layer_close = function() {
+    $('.sect10').css('display', 'none');
+};
 
